@@ -326,7 +326,7 @@ function loadQuestion() {
         });
 
         // Show Explain AI Button
-        const query = encodeURIComponent(`service now csa questions ${q.question}`);
+        const query = encodeURIComponent(`Explain ${q.question} ${q.options} in detail with example`);
         explainAiBtn.href = `https://www.google.com/search?q=${query}`;
         explainAiBtn.classList.add('visible');
 
@@ -378,7 +378,7 @@ function handleNextClick() {
         });
 
         // Show Explain AI Button
-        const query = encodeURIComponent(`service now csa questions ${q.question}`);
+        const query = encodeURIComponent(`Explain ${q.question} ${q.options} in detail with example`);
         explainAiBtn.href = `https://www.google.com/search?q=${query}`;
         explainAiBtn.classList.add('visible');
 
