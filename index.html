@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CSA Practice Exam — Premium exam preparation with instant feedback and progress tracking.">
+    <title>CSA Exam Prep — Practice & Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- ================================== -->
+        <!-- START SCREEN                       -->
+        <!-- ================================== -->
+        <div id="start-screen" class="screen active">
+            <div class="start-content-wrapper">
+
+                <!-- Left Column: Start Options -->
+                <div class="start-hero">
+                    <div class="hero-icon">🎯</div>
+                    <h1>CSA Exam Prep</h1>
+                    <p class="tagline">Master ServiceNow CSA with randomized practice exams, instant feedback, and
+                        detailed
+                        performance tracking.</p>
+                    <div class="question-count-badge">
+                        <span class="dot"></span>
+                        <span id="total-questions-count">0 Questions Ready</span>
+                    </div>
+                    <div class="start-options">
+                        <button class="btn-option" data-mode="random-10">Random 10Q</button>
+                        <button class="btn-option" data-mode="random-25">Random 25Q</button>
+                        <button class="btn-option" data-mode="random-50">Random 50Q</button>
+                        <button class="btn-option" data-mode="random-100">Random 100Q</button>
+                        <button class="btn-option" data-mode="random-all">Random <span
+                                class="total-q-num"></span>Q</button>
+                        <button class="btn-option" data-mode="infinite">Infinite Random</button>
+                        <button class="btn-option" data-mode="sequence"><span class="total-q-num"></span>Q in
+                            Sequence</button>
+                        <button class="btn-option" data-mode="study">Study MCQs</button>
+
+                        <label class="jumble-checkbox">
+                            <input type="checkbox" id="jumble-options" checked>
+                            Jumble options
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Right Column: History -->
+                <div class="history-section">
+                    <div class="history-header">
+                        <span class="icon">📊</span>
+                        <h2>Your History</h2>
+                    </div>
+                    <ul id="history-list" class="history-list"></ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================================== -->
+        <!-- EXAM SCREEN                        -->
+        <!-- ================================== -->
+        <div id="exam-screen" class="screen">
+            <!-- Sidebar Navigator -->
+            <div class="exam-sidebar">
+                <div class="sidebar-header">
+                    <h3>Questions</h3>
+                    <div class="sidebar-stats">
+                        <span class="stat-answered" id="sidebar-answered">0</span> / <span id="sidebar-total">0</span>
+                        answered
+                    </div>
+                </div>
+                <div class="question-nav-grid" id="question-nav-grid"></div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="exam-main">
+                <!-- Top Bar -->
+                <div class="exam-topbar">
+                    <span class="question-counter">
+                        <span class="current" id="q-current">1</span>
+                        <span>/ <span id="q-total">0</span></span>
+                    </span>
+                    <div class="timer-display">
+                        <span class="timer-icon">⏱</span>
+                        <span id="timer-value">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+
+                <!-- Scrollable Question Content -->
+                <div class="exam-content">
+                    <div class="question-card" id="question-card">
+                        <div class="question-type-badge" id="question-type-badge">● Single Choice</div>
+                        <h2 class="question-text" id="question-text">Question text goes here</h2>
+                        <div id="options-container" class="options-list"></div>
+                        <a id="explain-ai-btn" class="explain-ai-btn" target="_blank" href="#">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                <path d="M22 12A10 10 0 1 1 12 2" />
+                            </svg>
+                            Explain Question with AI
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="exam-footer">
+                    <button id="prev-btn" class="btn-nav btn-secondary">← Prev</button>
+                    <div class="keyboard-hint">
+                        <span><span class="kbd">←</span> Prev</span>
+                        <span><span class="kbd">→</span> Next</span>
+                        <span><span class="kbd">↵</span> Check</span>
+                    </div>
+                    <button id="next-btn" class="btn-nav btn-primary">Check Answer ✓</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================== -->
+        <!-- RESULT SCREEN                      -->
+        <!-- ================================== -->
+        <div id="result-screen" class="screen">
+            <div class="result-hero">
+                <h1>Exam Complete!</h1>
+                <p class="result-subtitle">Here's how you performed</p>
+            </div>
+
+            <div class="score-ring-container">
+                <svg class="score-ring-svg" viewBox="0 0 120 120">
+                    <circle class="score-ring-bg" cx="60" cy="60" r="52" />
+                    <circle class="score-ring-progress" id="score-ring" cx="60" cy="60" r="52" stroke-dasharray="326.73"
+                        stroke-dashoffset="326.73" />
+                </svg>
+                <div class="score-ring-text">
+                    <div class="score-ring-percent" id="score-percent-display">0%</div>
+                    <div class="score-ring-label">Score</div>
+                </div>
+            </div>
+
+            <div class="result-grade" id="result-grade">A+</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value accent-val" id="res-total">0</div>
+                    <div class="stat-label">Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value correct-val" id="res-correct">0</div>
+                    <div class="stat-label">Correct</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value wrong-val" id="res-wrong">0</div>
+                    <div class="stat-label">Wrong</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value cyan-val" id="res-time">00:00</div>
+                    <div class="stat-label">Time</div>
+                </div>
+            </div>
+
+            <div class="performance-msg" id="performance-msg">
+                <span class="emoji">🎉</span>
+                Great job! Keep practicing.
+            </div>
+
+            <div class="result-actions">
+                <button id="restart-btn" class="btn-glow">↩ Return to Home</button>
+            </div>
+
+            <div class="history-section">
+                <div class="history-header">
+                    <span class="icon">📊</span>
+                    <h2>Your History</h2>
+                </div>
+                <ul id="res-history-list" class="history-list"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span>⚠️</span>
+        <span id="toast-message">Please select an option</span>
+    </div>
+
+    <script src="questions_clean.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
