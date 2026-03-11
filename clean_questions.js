@@ -154,7 +154,7 @@ const rawQuestions = [
         "correct": "sys_user"
     },
     {
-        "question": "A REQ number in the Service Catalog represents`¦",
+        "question": "A REQ number in the Service Catalog represents`\u00a6",
         "options": [
             "the order number.",
             "the stage.",
@@ -911,7 +911,7 @@ const rawQuestions = [
         "correct": "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
     },
     {
-        "question": "ServiceNow contains a resource which provides the following: ✑ A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. ✑ A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?",
+        "question": "ServiceNow contains a resource which provides the following: \u2711 A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. \u2711 A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?",
         "options": [
             "Common Services Data Model (CSDM)",
             "Information Technology Service Management (ITSM)",
@@ -949,13 +949,13 @@ const rawQuestions = [
             "Agent Control Center",
             "Back Office Dashboard",
             "Service Portals",
-            "Now Platformֲ® User Interfaces",
+            "Now Platform\u05b2\u00ae User Interfaces",
             "Field Service Taskboard"
         ],
         "correct": [
             "Now Mobile Apps",
             "Service Portals",
-            "Now Platformֲ® User Interfaces"
+            "Now Platform\u05b2\u00ae User Interfaces"
         ]
     },
     {
@@ -968,7 +968,10 @@ const rawQuestions = [
             "Schedules",
             "Database changes",
             "Related Lists",
-            "Report Definitions", "Scheduled Jobs", "Client Scripts", "Views"
+            "Report Definitions",
+            "Scheduled Jobs",
+            "Client Scripts",
+            "Views"
         ],
         "correct": [
             "Data",
@@ -1226,7 +1229,7 @@ const rawQuestions = [
         "correct": "Add the Department Manager group to the catalog item's user criteria"
     },
     {
-        "question": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: ✑ Incidents where the state is Closed ✑ Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?",
+        "question": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: \u2711 Incidents where the state is Closed \u2711 Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?",
         "options": [
             "Define the first condition; click AND button; define second condition; click Run",
             "Define the first condition; click AND button; define second condition; press enter",
@@ -1248,7 +1251,7 @@ const rawQuestions = [
         "correct": "incident.major_incident"
     },
     {
-        "question": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. ✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. ✑ For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?",
+        "question": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. \u2711 For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. \u2711 For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?",
         "options": [
             "Create one Catalog Item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog.",
             "Create one Catalog Item for Event Room Set Up; then publish to both Catalogs.",
@@ -1449,7 +1452,7 @@ const rawQuestions = [
         "correct": "Self Service > Knowledge"
     },
     {
-        "question": "A customer requests the following data quality measures be added: ✑ Incident numbers should be read only, on all lists and forms, for all users. ✑ Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?",
+        "question": "A customer requests the following data quality measures be added: \u2711 Incident numbers should be read only, on all lists and forms, for all users. \u2711 Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?",
         "options": [
             "Data Quality Policy",
             "Dictionary Design Policy",
@@ -1579,7 +1582,11 @@ const rawQuestions = [
             "My reports",
             "Team",
             "Dashboards",
-            "Global", "Admin", "Analytics", "All", "Company"
+            "Global",
+            "Admin",
+            "Analytics",
+            "All",
+            "Company"
         ],
         "correct": [
             "Group",
@@ -2207,16 +2214,6 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?",
-        "options": [
-            "The Assignment Group manager field is empty.",
-            "The manager does not have the itil role.",
-            "The manager is not a member of the Service Desk group.",
-            "The manager is not a member of the Network and Hardware groups."
-        ],
-        "correct": "The manager is not a member of the Network and Hardware groups."
-    },
-    {
         "question": "You have been asked to configure a form so an employee could order tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? (Choose three.)",
         "options": [
             "Create Catalog Item for the Tablet, and add a variable set to the form, for the accessory options.",
@@ -2251,23 +2248,6 @@ const rawQuestions = [
             "A department"
         ],
         "correct": "A collection of users"
-    },
-    {
-        "question": "On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)",
-        "options": [
-            "Group",
-            "Department",
-            "My reports",
-            "Team",
-            "Global",
-            "All"
-        ],
-        "correct": [
-            "Group",
-            "My reports",
-            "Global",
-            "All"
-        ]
     },
     {
         "question": "On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?",
@@ -2509,7 +2489,7 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: •Requested for •Requested by •Approving manager •Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?",
+        "question": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: \u2022Requested for \u2022Requested by \u2022Approving manager \u2022Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?",
         "options": [
             "Create a Variable Set Template, then apply to all of the catalog items.",
             "Create one Variable Set for the four variables, then add that variable set to each of the 80 catalog items.",
@@ -2663,7 +2643,7 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "A customer requests the following data quality measures be added: •Incident numbers should be read only, on all lists and forms, for all users. •Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?",
+        "question": "A customer requests the following data quality measures be added: \u2022Incident numbers should be read only, on all lists and forms, for all users. \u2022Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?",
         "options": [
             "Data Quality Policy",
             "Dictionary Design Policy",
@@ -2773,17 +2753,6 @@ const rawQuestions = [
         "correct": "Approver [approver_user]"
     },
     {
-        "question": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
-        "options": [
-            "Can Contribute",
-            "Cannot Author",
-            "Can Read",
-            "Can Write",
-            "Can Author"
-        ],
-        "correct": "Can Read"
-    },
-    {
         "question": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)",
         "options": [
             "Users",
@@ -2832,16 +2801,6 @@ const rawQuestions = [
             "read",
             "write"
         ]
-    },
-    {
-        "question": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
-        "options": [
-            "Magnifier",
-            "Question mark",
-            "Gear",
-            "Chat bubbles"
-        ],
-        "correct": "Gear"
     },
     {
         "question": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
@@ -2946,7 +2905,7 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "Here is an example of the criteria set for a knowledge base: • Companies: ACME North America • Departments: HR • Groups: ACME Managers • Match All: Yes In this example, what users would have access to this knowledge base?",
+        "question": "Here is an example of the criteria set for a knowledge base: \u2022 Companies: ACME North America \u2022 Departments: HR \u2022 Groups: ACME Managers \u2022 Match All: Yes In this example, what users would have access to this knowledge base?",
         "options": [
             "Members of the ACME Manager group, who are also members of HR Department and part of ACME North America",
             "Employees of ACME North America, who are members of HR Department or the ACME Managers group",
@@ -2967,7 +2926,7 @@ const rawQuestions = [
         "correct": "Data Pill"
     },
     {
-        "question": "A customer has asked for the following updates to a form: • Make Resolution code Mandatory, when state is changed to Resolved • Hide Major Incident check box, unless logged in user has Major Incident Manager role What type of rule(s) would you use to implement this requirement?",
+        "question": "A customer has asked for the following updates to a form: \u2022 Make Resolution code Mandatory, when state is changed to Resolved \u2022 Hide Major Incident check box, unless logged in user has Major Incident Manager role What type of rule(s) would you use to implement this requirement?",
         "options": [
             "Form Constraint",
             "UI Design",
@@ -3028,7 +2987,7 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "For your implementation, the following tables are extended from each other: • Incident table is extended from Task table. • Super Incident table is extended from Incident table. In this situation, which table(s) are Parent, Child and Base tables? (Choose five.)",
+        "question": "For your implementation, the following tables are extended from each other: \u2022 Incident table is extended from Task table. \u2022 Super Incident table is extended from Incident table. In this situation, which table(s) are Parent, Child and Base tables? (Choose five.)",
         "options": [
             "Super Incident table is a Parent table",
             "Incident table is a Child table",
@@ -3113,16 +3072,6 @@ const rawQuestions = [
         "correct": "Server"
     },
     {
-        "question": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
-        "options": [
-            "User Menu",
-            "Content Fame",
-            "Application Navigator",
-            "Module"
-        ],
-        "correct": "User Menu"
-    },
-    {
         "question": "How would you describe the relationship between the Incident and Task table?",
         "options": [
             "Incident table has a one to many relationship with the Task table",
@@ -3168,12 +3117,12 @@ const rawQuestions = [
     {
         "question": "You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?",
         "options": [
-            "Context Menu > Form Design > add the “Save” button.",
-            "All > System Properties > UI Properties > Turn on the “glide.ui.advanced” property.",
-            "All > System Properties > UI Properties > Turn on the “Save” button.",
-            "Context Meru > Form Layout > add the “Save” button."
+            "Context Menu > Form Design > add the \u201cSave\u201d button.",
+            "All > System Properties > UI Properties > Turn on the \u201cglide.ui.advanced\u201d property.",
+            "All > System Properties > UI Properties > Turn on the \u201cSave\u201d button.",
+            "Context Meru > Form Layout > add the \u201cSave\u201d button."
         ],
-        "correct": "All > System Properties > UI Properties > Turn on the “Save” button."
+        "correct": "All > System Properties > UI Properties > Turn on the \u201cSave\u201d button."
     },
     {
         "question": "Which features ensures data consistency while importing data using import sets and web services?",
@@ -3274,7 +3223,7 @@ const rawQuestions = [
         "question": "Which data consistency settings can be achieved using UI Policy? (Choose three.)",
         "options": [
             "Setting fields to accept the data in an expected format",
-            "Setting fields to accept the data with ‘n’ number of characters",
+            "Setting fields to accept the data with \u2018n\u2019 number of characters",
             "Setting fields hidden",
             "Settings fields read-only",
             "Setting fields mandatory"
@@ -3323,7 +3272,7 @@ const rawQuestions = [
         "question": "An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?",
         "options": [
             "All > Tables and Columns > Tasks",
-            "In the Navigation Filter, type “requests.list\" and press the Enter key",
+            "In the Navigation Filter, type \u201crequests.list\" and press the Enter key",
             "All > Service Catalog > Requests",
             "All > Service Catalog > Open Records > Items"
         ],
@@ -3348,27 +3297,6 @@ const rawQuestions = [
             "security_admin"
         ],
         "correct": "security_admin"
-    },
-    {
-        "question": "What is the most common role that has access to almost all platform features, functions, and data?",
-        "options": [
-            "Super User [sn_super_user]",
-            "Security Admin [securty_admin]",
-            "System Administrator [admin]",
-            "Base Admin [base_admin]",
-            "System Manager [sys_manager]"
-        ],
-        "correct": "System Administrator [admin]"
-    },
-    {
-        "question": "When moving multiple update sets at one time, what might you do to facilitate the move?",
-        "options": [
-            "Preview",
-            "Batch",
-            "List",
-            "Map"
-        ],
-        "correct": "Batch"
     },
     {
         "question": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
@@ -3451,7 +3379,7 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order: • Number • Task Type • Parent • Short Description • Assignment Group • Assignee • Updated After navigating to the list, where would you click, to meet this requirement?",
+        "question": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order: \u2022 Number \u2022 Task Type \u2022 Parent \u2022 Short Description \u2022 Assignment Group \u2022 Assignee \u2022 Updated After navigating to the list, where would you click, to meet this requirement?",
         "options": [
             "Click List Context Menu > Personalize List",
             "Click List Context Menu > Configure > Columns",
@@ -3459,16 +3387,6 @@ const rawQuestions = [
             "Right click on any column header, Context Menu > Configure > List Layout"
         ],
         "correct": "Right click on any column header, Context Menu > Configure > List Layout"
-    },
-    {
-        "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
-        "options": [
-            "Agent Assist",
-            "Virtual Agent",
-            "Now Messenger",
-            "Instance Chat"
-        ],
-        "correct": "Virtual Agent"
     },
     {
         "question": "On the Form header, which element you to access form templates?",
@@ -3481,68 +3399,6 @@ const rawQuestions = [
         "correct": "More Options (...)"
     },
     {
-        "question": "What is the definition of a group?",
-        "options": [
-            "A collection of subject matter experts",
-            "A department",
-            "An escalation pod",
-            "A collection of users",
-            "A collection of tasks"
-        ],
-        "correct": "A collection of users"
-    },
-    {
-        "question": "Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?",
-        "options": [
-            "Flow Design",
-            "CI Class Map",
-            "Dependency View",
-            "Business Service Map"
-        ],
-        "correct": "Dependency View"
-    },
-    {
-        "question": "What icon do you use to change the label on a Favorite?",
-        "options": [
-            "Star",
-            "Clock",
-            "Triangle",
-            "Pencil"
-        ],
-        "correct": "Pencil"
-    },
-    {
-        "question": "Which tool is used to define relationships between fields in an import set table and a target table?",
-        "options": [
-            "Schema Map",
-            "Field Transformer",
-            "Transform Map",
-            "Transform Schema"
-        ],
-        "correct": "Transform Map"
-    },
-    {
-        "question": "When moving a homepage or dashboard between instances, what must you remember?",
-        "options": [
-            "Download both as PDF and XML files",
-            "They cannot be moved via update set",
-            "The Platform will automatically add them to the update set",
-            "Manually add them to the update set"
-        ],
-        "correct": "Manually add them to the update set"
-    },
-    {
-        "question": "Which allows the creation of a task-based record from Service Catalog?",
-        "options": [
-            "Record Producers",
-            "UI Builder",
-            "Assignment Rule",
-            "UI Actions",
-            "Flow Designer"
-        ],
-        "correct": "Record Producers"
-    },
-    {
         "question": "On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?",
         "options": [
             "Can Contribute",
@@ -3552,16 +3408,6 @@ const rawQuestions = [
             "Can Author"
         ],
         "correct": "Can Contribute"
-    },
-    {
-        "question": "Which type of scripts run in the browser?",
-        "options": [
-            "UI Policies",
-            "Script Include Scripts",
-            "Access Control Scripts",
-            "Business Rule Scripts"
-        ],
-        "correct": "UI Policies"
     },
     {
         "question": "What enables you to trace the connection from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
@@ -3606,16 +3452,6 @@ const rawQuestions = [
         "correct": "Define Data Source"
     },
     {
-        "question": "What are the steps for importing data using an import set?",
-        "options": [
-            "Create Import Set; Create transform map; Transform data; Clean up import table",
-            "Create a Transform Map, Load Data, Transform Data, Run Transform Map Script",
-            "Identify source; Import transform map; Run transformer; Verify import",
-            "Select source file; Run AutoMap; Transform data; Clean up target table"
-        ],
-        "correct": "Create Import Set; Create transform map; Transform data; Clean up import table"
-    },
-    {
         "question": "If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment? (Choose two.)",
         "options": [
             "Select the record using the check box, then select the Person icon",
@@ -3628,48 +3464,6 @@ const rawQuestions = [
             "Double click on the Assigned to value, type the name of the user, and select the green check",
             "Right click on the Task number and select the Assign to me option in the menu"
         ]
-    },
-    {
-        "question": "What module enables an administrator to define destinations for imported data on any ServiceNow table?",
-        "options": [
-            "Load Data",
-            "Field Transform",
-            "Schema Map",
-            "Transform Map"
-        ],
-        "correct": "Transform Map"
-    },
-    {
-        "question": "Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?",
-        "options": [
-            "Now Support",
-            "ServiceNow Messenger",
-            "Agent Workspace",
-            "Virtual Agent",
-            "Knowledge Chat"
-        ],
-        "correct": "Virtual Agent"
-    },
-    {
-        "question": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
-        "options": [
-            "Now Support",
-            "Community",
-            "Docs",
-            "Help Panel (question mark icon)"
-        ],
-        "correct": "Help Panel (question mark icon)"
-    },
-    {
-        "question": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
-        "options": [
-            "Select Data Source",
-            "Schedule Transform",
-            "Load Data",
-            "Create Transform Map",
-            "Field Alignment"
-        ],
-        "correct": "Create Transform Map"
     },
     {
         "question": "On a form header, what icon would you click to access Template features?",
@@ -3705,8 +3499,8 @@ const rawQuestions = [
         "question": "Which action enables personalization in a form for the admin role, only?",
         "options": [
             "Navigate to sys_form_properties.list and set the property glide.ui.enable_personalize_form.admin to true.",
-            "Navigate to Context Menu > Configure > Form Layout and select ‘Enable Personalization’ and Enter the ‘admin’ role.",
-            "Navigate to Context Menu > Configure > Table and add the role ‘Admin’ in the ‘Available User’ list box.",
+            "Navigate to Context Menu > Configure > Form Layout and select \u2018Enable Personalization\u2019 and Enter the \u2018admin\u2019 role.",
+            "Navigate to Context Menu > Configure > Table and add the role \u2018Admin\u2019 in the \u2018Available User\u2019 list box.",
             "Navigate to sys_properties.list find the property glide.ui.personalize_form.role and set the Value to admin."
         ],
         "correct": "Navigate to sys_properties.list find the property glide.ui.personalize_form.role and set the Value to admin."
@@ -3850,7 +3644,7 @@ const rawQuestions = [
         "correct": "Update sets"
     },
     {
-        "question": "An administrator creates “customer_table_admin” and “customer_table_user” roles for the newly created \"Customer Table”. Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?",
+        "question": "An administrator creates \u201ccustomer_table_admin\u201d and \u201ccustomer_table_user\u201d roles for the newly created \"Customer Table\u201d. Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?",
         "options": [
             "customer.none",
             "customer.all",
@@ -4149,7 +3943,7 @@ const rawQuestions = [
         "options": [
             "On the 'Who will receive' tab on the Notification record add the Caller field, then dot walk to the Caller's Manager field to add it.",
             "On the Notification record create a flow and include a notification in the flow for \"All receivers\".",
-            "On the 'Send to' tab on the Notification record, add the Caller field, then dot walk to the Caller’s Manager field to add it.",
+            "On the 'Send to' tab on the Notification record, add the Caller field, then dot walk to the Caller\u2019s Manager field to add it.",
             "On the 'Send to' tab on the Notification record, set \"Who will receive\" to Subscribable."
         ],
         "correct": "On the 'Who will receive' tab on the Notification record add the Caller field, then dot walk to the Caller's Manager field to add it."
@@ -4430,17 +4224,7 @@ const rawQuestions = [
         "correct": "Configuration score"
     },
     {
-        "question": "What is used frequently to move customizations from one instance to another?",
-        "options": [
-            "UI Script Includes",
-            "Application Files",
-            "Table Templates",
-            "Update Sets"
-        ],
-        "correct": "Update Sets"
-    },
-    {
-        "question": "Which components are the customer’s responsibility according to the Shared Responsibility Model? (Choose two.)",
+        "question": "Which components are the customer\u2019s responsibility according to the Shared Responsibility Model? (Choose two.)",
         "options": [
             "Infrastructure management",
             "Authentication and authorization",
@@ -4547,16 +4331,6 @@ const rawQuestions = [
         "correct": "System table"
     },
     {
-        "question": "Which path is used on the Filter Navigator to display the list of records from the sys_user table?",
-        "options": [
-            "sys_user.view",
-            "sys_user.list",
-            "sys_user.display",
-            "sys_user.do"
-        ],
-        "correct": "sys_user.list"
-    },
-    {
         "question": "What are the three key tables in an enterprise CMDB?",
         "options": [
             "cmdb_rel_ci",
@@ -4571,36 +4345,6 @@ const rawQuestions = [
             "cmdb",
             "cmdb_ci"
         ]
-    },
-    {
-        "question": "What icon do you use to change the label on a Favorite?",
-        "options": [
-            "Pencil",
-            "Triangle",
-            "Clock",
-            "Star"
-        ],
-        "correct": "Pencil"
-    },
-    {
-        "question": "Which module in the Service Catalog application is used to create a new catalog item?",
-        "options": [
-            "Maintain Items",
-            "Content Items",
-            "Catalog Items",
-            "Configuration Items"
-        ],
-        "correct": "Maintain Items"
-    },
-    {
-        "question": "What action can be performed by selecting the Additional actions menu in Table Builder?",
-        "options": [
-            "Add a new module",
-            "Create a database index",
-            "Duplicate the selected form view",
-            "Schedule a job"
-        ],
-        "correct": "Duplicate the selected form view"
     },
     {
         "question": "What are the components that make up a filter condition?",
@@ -4629,87 +4373,6 @@ const rawQuestions = [
         "correct": "On the list of records, locate and right-click on the Resolved value, select Filter Out"
     },
     {
-        "question": "Which one statement correctly describes Access Control rule evaluation?",
-        "options": [
-            "Rules are evaluated from the general to the specific, so a table rule must be active to continue",
-            "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed",
-            "Rules are evaluated using roles. The role with the most permissions evaluates the rules first",
-            "If more than one rule applies to a row, the older rule is evaluated first"
-        ],
-        "correct": "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
-    },
-    {
-        "question": "What helps to define the structure of a catalog item form that is displayed to the customer?",
-        "options": [
-            "Catalog Description",
-            "Catalog Definition",
-            "Order Guides",
-            "Variables"
-        ],
-        "correct": "Variables"
-    },
-    {
-        "question": "Which flow components allow you to specify when a flow should be run?",
-        "options": [
-            "Trigger Criteria and Clock",
-            "Condition and Table",
-            "Trigger and Condition",
-            "Scope and Trigger Condition",
-            "Trigger and Condition Pill"
-        ],
-        "correct": "Trigger and Condition"
-    },
-    {
-        "question": "What protects applications by restricting access to data in another application, in the same instance?",
-        "options": [
-            "Admin Center",
-            "Assignment Rules",
-            "Application Scope",
-            "Access Control Rules"
-        ],
-        "correct": "Application Scope"
-    },
-    {
-        "question": "Which sequence of actions applies an update set to an instance?",
-        "options": [
-            "Preview, Save, Commit",
-            "Preview, Retrieve, Commit",
-            "Retrieve, Preview, Commit",
-            "Retrieve, Commit, Preview"
-        ],
-        "correct": "Retrieve, Preview, Commit"
-    },
-    {
-        "question": "What are the steps to apply an update set retrieved from another instance?",
-        "options": [
-            "Import the Update Set > Verify the Update Set is complete > Link the Update Set > Publish",
-            "Verify Update Set is Complete, Retrieve, Preview, Commit",
-            "Load the Update Set > Import the Update Set > Install",
-            "Verify Update Set is Complete, Test Connection, Apply"
-        ],
-        "correct": "Verify Update Set is Complete, Retrieve, Preview, Commit"
-    },
-    {
-        "question": "Which displays the list of activities, or history, on a form?",
-        "options": [
-            "Formatter",
-            "Sidebar",
-            "Dictionary",
-            "History Menu"
-        ],
-        "correct": "Sidebar"
-    },
-    {
-        "question": "Which statement correctly describes the differences between a Client Script and a Business Rule?",
-        "options": [
-            "A Client Script executes on the server and a Business Rule executes on the client",
-            "A Client Script executes on the client and a Business Rule executes on the server",
-            "A Client Script executes before a record is loaded and a Business Rule executes after a record is updated",
-            "A Client Script executes before a record is loaded and a Business Rule executes after a record is loaded"
-        ],
-        "correct": "A Client Script executes on the client and a Business Rule executes on the server"
-    },
-    {
         "question": "The ServiceNow platform supports a wide variety of plug and play applications. You can choose from the included workflows or build your own workflow. Which of these workflows are included in the platform?",
         "options": [
             "Infrastructure Workflows",
@@ -4726,218 +4389,6 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "Which component of a table contains a piece of data for one record?",
-        "options": [
-            "Datapoint",
-            "Field",
-            "Factor",
-            "Item",
-            "Element"
-        ],
-        "correct": "Field"
-    },
-    {
-        "question": "Which module is used as the first step for importing data?",
-        "options": [
-            "Coalesce Data",
-            "Import Data",
-            "Transform Data",
-            "Load Data"
-        ],
-        "correct": "Import Data"
-    },
-    {
-        "question": "What is the purpose of an application scope?",
-        "options": [
-            "Scope determines which parts of an application are available for use by other applications in ServiceNow",
-            "Scope determines the functionality of core services in the platform",
-            "Scope determines all applications access each other's tables and business logic",
-            "Scope prevents applications from changing their own tables and business logic"
-        ],
-        "correct": "Scope determines which parts of an application are available for use by other applications in ServiceNow"
-    },
-    {
-        "question": "On a Catalog Task record, how would an administrator change the priority choice options?",
-        "options": [
-            "Right-click the Priority Label > select Configure Choices",
-            "Right-click the Priority Label > select Configure Lists",
-            "In the Context menu of the form, select Configure Options",
-            "Open the Data Dictionary > select Values"
-        ],
-        "correct": "Right-click the Priority Label > select Configure Choices"
-    },
-    {
-        "question": "Which application is used primarily to load data into ServiceNow?",
-        "options": [
-            "System Import Sets",
-            "Data Import Configuration",
-            "Import Management",
-            "Import Hub"
-        ],
-        "correct": "System Import Sets"
-    },
-    {
-        "question": "Which Security Center feature helps resolve platform related security issues and misconfigurations?",
-        "options": [
-            "Security scanner",
-            "Security hardening",
-            "Best practices",
-            "Customer actions"
-        ],
-        "correct": "Security hardening"
-    },
-    {
-        "question": "In a Knowledge Base record, where can an administrator find the User Criteria for who can read the articles?",
-        "options": [
-            "From the Can Read tab",
-            "From the Accessible to tab",
-            "From the Can Access tab",
-            "From the Available to tab"
-        ],
-        "correct": "From the Available to tab"
-    },
-    {
-        "question": "What is the name of the string that displays filter criteria?",
-        "options": [
-            "Topic",
-            "Menu",
-            "Breadcrumb",
-            "Choice"
-        ],
-        "correct": "Breadcrumb"
-    },
-    {
-        "question": "What is the result of the order in which access controls are evaluated?",
-        "options": [
-            "Ensures user has access to the application, before evaluating access to a module within the application",
-            "Ensures user can get to work as quickly as possible",
-            "Ensures user has access to a table, before evaluating access to a field in the table",
-            "Ensures user has access to the fields in a table, before considering their access to the table"
-        ],
-        "correct": "Ensures user has access to the application, before evaluating access to a module within the application"
-    },
-    {
-        "question": "Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?",
-        "options": [
-            "Can Read",
-            "Can Access",
-            "Access List",
-            "Accessible to"
-        ],
-        "correct": "Can Read"
-    },
-    {
-        "question": "How can an administrator modify the layout of a form using Table Builder?",
-        "options": [
-            "By changing the database schema",
-            "By editing system scripts",
-            "By altering the page header theme",
-            "By configuring form sections"
-        ],
-        "correct": "By configuring form sections"
-    },
-    {
-        "question": "How would you describe the relationship between the Incident and Task table?",
-        "options": [
-            "Incident table has a one to many relationship with the Task table",
-            "Incident table has a many to many relationship with the Task table",
-            "Incident table is related to the Task table via the INC number",
-            "Incident table is a database view of the Task table",
-            "Incident table is extended from Task table"
-        ],
-        "correct": "Incident table is extended from Task table"
-    },
-    {
-        "question": "Where do Ul Policies run?",
-        "options": [
-            "Within server-side scripts",
-            "Client-side (browser)",
-            "Knowledge Base",
-            "Server-side (database)"
-        ],
-        "correct": "Client-side (browser)"
-    },
-    {
-        "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
-        "options": [
-            "Agent Assist",
-            "Now Messenger",
-            "Instance Chat",
-            "Virtual Agent"
-        ],
-        "correct": "Virtual Agent"
-    },
-    {
-        "question": "What actions are required to refine the number of records displayed in a list view?",
-        "options": [
-            "Add embedded lists and form annotations",
-            "Modify field properties and duplicate form views",
-            "Select the filter icon and apply conditions",
-            "Right-click to configure relationship list"
-        ],
-        "correct": "Select the filter icon and apply conditions"
-    },
-    {
-        "question": "What is the best practice related to using the Default Update Set for moving customizations between instances?",
-        "options": [
-            "Submit Default update set to application repository",
-            "Keep Default update set to maximum of 20 recards, for troubleshooting purposes",
-            "Merge Default update sets before moving between instances",
-            "You should not use the Default Update sets for moving between instances"
-        ],
-        "correct": "You should not use the Default Update sets for moving between instances"
-    },
-    {
-        "question": "As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?",
-        "options": [
-            "SharePoint",
-            "Stack Overflow",
-            "Knowledge Now",
-            "ServiceNow Wiki",
-            "Knowledge"
-        ],
-        "correct": "Knowledge"
-    },
-    {
-        "question": "What action helps to see which modules are visible to a user?",
-        "options": [
-            "Install the Bomgar plug-in",
-            "Impersonate the user",
-            "Initiate a Connect Chat session",
-            "Launch a NowChat window"
-        ],
-        "correct": "Impersonate the user"
-    },
-    {
-        "question": "What encryption feature is included in ServiceNow by default?",
-        "options": [
-            "Data in transit",
-            "Data in use",
-            "Data at rest"
-        ],
-        "correct": "Data at rest"
-    },
-    {
-        "question": "What is used to determine user access to knowledge bases or a knowledge article?",
-        "options": [
-            "User Criteria",
-            "Read Access Flag",
-            "Privacy Settings",
-            "sn_kb_read, sn_article_read"
-        ],
-        "correct": "User Criteria"
-    },
-    {
-        "question": "Which access control rule applies to every field in the incident table?",
-        "options": [
-            "incident.*",
-            "incident.all",
-            "incident||*",
-            "incident<>*"
-        ],
-        "correct": "incident.*"
-    },
-    {
         "question": "An IT user calls the service desk because his work needs to be completed on task records. All he can see is Self Service on his homepage when he logs in to the ServiceNow instance. What issue could explain this?",
         "options": [
             "His user account does not have ITIL role",
@@ -4952,48 +4403,6 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "What is the role of form annotations within Table Builder?",
-        "options": [
-            "To add visual appeal with colors in the designer",
-            "To rearrange fields in a form",
-            "To create new form views",
-            "To provide additional information on each field"
-        ],
-        "correct": "To provide additional information on each field"
-    },
-    {
-        "question": "The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?",
-        "options": [
-            "Request + Response",
-            "Save + Update",
-            "Write + Read",
-            "Submit + Query",
-            "Insert + Verify"
-        ],
-        "correct": "Request + Response"
-    },
-    {
-        "question": "On a list, what does each row show?",
-        "options": [
-            "A table",
-            "A field",
-            "A filter",
-            "A record"
-        ],
-        "correct": "A record"
-    },
-    {
-        "question": "When designing a flow, how do you reference data from a record, in that flow?",
-        "options": [
-            "Drag the table icon onto the flow definition",
-            "Specify the source table on the data pill related list",
-            "Drag the data pill onto the flow definition",
-            "Add the table reference using the slush bucket",
-            "Use the condition builder to specify the desired values"
-        ],
-        "correct": "Drag the data pill onto the flow definition"
-    },
-    {
         "question": "Which modules can you use to create a new table?",
         "options": [
             "Schema Map",
@@ -5005,27 +4414,6 @@ const rawQuestions = [
             "Dictionary",
             "Tables"
         ]
-    },
-    {
-        "question": "What component causes a flow to run after a record has been created or updated?",
-        "options": [
-            "Updated-date trigger",
-            "On-change trigger",
-            "Date-based trigger",
-            "Record-based trigger",
-            "Application-based trigger"
-        ],
-        "correct": "Record-based trigger"
-    },
-    {
-        "question": "An Administrator wants to review all the users having privileged access to identify users that no longer need this level of access. Which Security Center feature can help fulfil this requirement?",
-        "options": [
-            "Security scanner",
-            "Customer actions",
-            "Security posture console",
-            "Security hardening"
-        ],
-        "correct": "Security posture console"
     },
     {
         "question": "Which components are the customer's responsibility according to the Shared Responsibility Model?",
@@ -5042,16 +4430,6 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "What access does a user need to be able to import articles to a knowledge base?",
-        "options": [
-            "sn_knowledge_import",
-            "Can import",
-            "Can contribute",
-            "sn_knowledge_contribute"
-        ],
-        "correct": "sn_knowledge_import"
-    },
-    {
         "question": "A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use tofulfill this requirement?",
         "options": [
             "Only publish the item in the HR service catalog",
@@ -5061,26 +4439,6 @@ const rawQuestions = [
             "Add the Department Manager group to the catalog item's user criteria"
         ],
         "correct": "Add the Department Manager group to the catalog item's user criteria"
-    },
-    {
-        "question": "Which element is used to track items not saved with a field, in a record?",
-        "options": [
-            "Activity formatter",
-            "Sidebar",
-            "Dictionary",
-            "List Editor"
-        ],
-        "correct": "Activity formatter"
-    },
-    {
-        "question": "If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?",
-        "options": [
-            "A client script",
-            "A business rule",
-            "A fix script",
-            "A server script"
-        ],
-        "correct": "A client script"
     },
     {
         "question": "Which data consistency settings can be achieved using UI Policy?",
@@ -5098,67 +4456,6 @@ const rawQuestions = [
         ]
     },
     {
-        "question": "Which is used to configure access to Applications and Modules?",
-        "options": [
-            "Users",
-            "Roles",
-            "Groups",
-            "Departments"
-        ],
-        "correct": "Roles"
-    },
-    {
-        "question": "Where can Admins check which release is running on an ServiceNow instance?",
-        "options": [
-            "System.upgraded table",
-            "Stats module",
-            "Memory Stats module",
-            "Transactions log"
-        ],
-        "correct": "Stats module"
-    },
-    {
-        "question": "You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create Incident records, which are automatically routed to the Service Desk. Which method would you use?",
-        "options": [
-            "Create Order Guide",
-            "Create Record Producer",
-            "Create Catalog Item",
-            "Create Content Item"
-        ],
-        "correct": "Create Record Producer"
-    },
-    {
-        "question": "What section on a task record is used to see the most recent updates made to a record?",
-        "options": [
-            "Audit Log",
-            "Related List",
-            "Activity Stream",
-            "Timeline"
-        ],
-        "correct": "Activity Stream"
-    },
-    {
-        "question": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
-        "options": [
-            "Field Alignment",
-            "Select Data Source",
-            "Schedule Transform",
-            "Load Data",
-            "Create Transform Map"
-        ],
-        "correct": "Field Alignment"
-    },
-    {
-        "question": "Which admin role is required to make changes to High Security Settings?",
-        "options": [
-            "admin",
-            "security_admin",
-            "high_sec_admin",
-            "sn_acl_admin"
-        ],
-        "correct": "security_admin"
-    },
-    {
         "question": "An Administrator wants to display a reminder message to any user submitting an incident.Which feature does this?",
         "options": [
             "Client Script",
@@ -5167,47 +4464,6 @@ const rawQuestions = [
             "Data Policy"
         ],
         "correct": "Client Script"
-    },
-    {
-        "question": "The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?",
-        "options": [
-            "incognito",
-            "impersonator",
-            "service_desk",
-            "admin"
-        ],
-        "correct": "impersonator"
-    },
-    {
-        "question": "What enables you to trace the connection from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
-        "options": [
-            "Service Tracer",
-            "Automapping Utility",
-            "Transform Map",
-            "Relationships"
-        ],
-        "correct": "Relationships"
-    },
-    {
-        "question": "What does ServiceNow recommend as a best practice regarding data imports?",
-        "options": [
-            "Monitor data quality and clean imported data, using the Data Scrub Workspace.",
-            "Plan time before your import to remove obsolete or inaccurate data.",
-            "Adjust your Transform maps, after the data is loaded into the target table.",
-            "Create a new Import set table for each new data load.",
-            "Use extremely large Import Sets, instead of multiple large Import Sets."
-        ],
-        "correct": "Plan time before your import to remove obsolete or inaccurate data."
-    },
-    {
-        "question": "In what order are Access Controls evaluated?",
-        "options": [
-            "Table-level - most specific to most general; then Field-level - most specific to most general",
-            "Table-level - most specific to most general; then Row-level - most specific to most general",
-            "Field-level - most general to most specific; then Row-level - most specific to most general",
-            "Field-level - most specific to most general; then Table-level - most specific to most general"
-        ],
-        "correct": "Table-level - most specific to most general; then Row-level - most specific to most general"
     },
     {
         "question": "An Administrator wants to remove privileged users who have never accessed the platform.Which Security Center section is checked for these users?",
@@ -5241,15 +4497,5 @@ const rawQuestions = [
             "System.upgraded table"
         ],
         "correct": "System.upgraded table"
-    },
-    {
-        "question": "An Administrator wants to remove privileged users who have never accessed the platform.Which Security Center section is checked for these users?",
-        "options": [
-            "Security metrics",
-            "Security posture dashboard",
-            "Security scanner",
-            "Security hardening"
-        ],
-        "correct": "Security posture dashboard"
     }
-]
+];

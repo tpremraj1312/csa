@@ -378,7 +378,7 @@ function handleNextClick() {
         });
 
         // Show Explain AI Button
-        const query = encodeURIComponent(`Explain ${q.question} ${q.options} in detail with example`);
+        const query = encodeURIComponent(`Explain ${q.question} ${q.options} in detail, explaining why the corresponding options are correct or incorrect with example`);
         explainAiBtn.href = `https://www.google.com/search?q=${query}`;
         explainAiBtn.classList.add('visible');
 
