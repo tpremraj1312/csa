@@ -2112,12 +2112,13 @@ const rawQuestions = [
             "cmdb_rel_ci",
             "sn_cmdb",
             "cmdb_bak",
-            "cmdb_ci G. sn_cmdb_ci"
+            "cmdb_ci",
+            "sn_cmdb_ci"
         ],
         "correct": [
             "cmdb",
             "cmdb_rel_ci",
-            "cmdb_ci G. sn_cmdb_ci"
+            "cmdb_ci"
         ]
     },
     {
@@ -3793,13 +3794,15 @@ const rawQuestions = [
             "Change",
             "Display",
             "After",
-            "Before G.Submit H.Click"
+            "Before",
+            "Submit",
+            "Click"
         ],
         "correct": [
             "Async",
             "Display",
             "After",
-            "Before G.Submit H.Click"
+            "Before"
         ]
     },
     {
